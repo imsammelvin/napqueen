@@ -1,0 +1,36 @@
+.table {
+  margin-left: 42vh;
+  width: 200%;
+}
+
+.custom-table .MuiTableCell-root {
+  font-size: 13px; /* Adjust the font size as desired */
+}
+
+/* CampaignTable.css */
+.custom-table .MuiTableHead-root {
+  font-size: 14px !important; /* Adjust the font size as desired */
+}
+
+/* CampaignTable.css */
+.custom-table .MUIDataTableHeadCell-root {
+  font-size: 14px !important; /* Adjust the font size as desired */
+}
+
+.MUIDataTable-tableRoot {
+  box-shadow: none !important;
+}
+
+.table-container::-webkit-scrollbar {
+  width: 12px;
+  background-color: #ffffff;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
+}
