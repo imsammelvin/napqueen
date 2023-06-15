@@ -10,7 +10,6 @@ import {
 } from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-regular-svg-icons";
-import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import ViewColumnIcon from "@mui/icons-material/ViewColumn";
 
@@ -132,17 +131,6 @@ const CampaignTable = () => {
     viewColumns: false,
   };
 
-  const getMuiTheme = () =>
-    createTheme({
-      overrides: {
-        MuiTableHead: {
-          root: {
-            fontSize: "14px", // Adjust the font size as desired
-          },
-        },
-      },
-    });
-
   const data = [
     {
       status: "Active",
@@ -254,14 +242,12 @@ const CampaignTable = () => {
         className="table-container"
         style={{ overflowX: "hidden", marginLeft: "200px" }}
       >
-        <MuiThemeProvider theme={getMuiTheme()}>
-          <MUIDataTable
-            columns={columns}
-            data={data}
-            options={options}
-            className="custom-table"
-          />
-        </MuiThemeProvider>
+        <MUIDataTable
+          columns={columns}
+          data={data}
+          options={options}
+          className="custom-table"
+        />
       </div>
     </div>
   );
