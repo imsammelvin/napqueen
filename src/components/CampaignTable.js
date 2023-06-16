@@ -154,7 +154,7 @@ const CampaignTable = () => {
       campaignName: "Campaign 2",
       info: "Additional info",
       automation: "Disabled",
-      dayparting: "No",
+      dayparting: "Yes",
       budget: "$1500",
       biddingStrategy: "Up",
       spend: "$800",
