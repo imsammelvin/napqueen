@@ -43,7 +43,7 @@ const DateRangePickerComponent = () => {
     fontSize: "13px",
     margin: "3px",
     color: "#000000",
-    fontWeight: "bold",
+    fontWeight: "500",
   };
 
   const smallTextStyle = {
