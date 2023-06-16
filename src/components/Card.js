@@ -1,6 +1,7 @@
 import React from "react";
 import "./Card.css";
-import { FaArrowUp, FaArrowDown } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 
 const Card = ({ children, data }) => {
   return (
@@ -21,9 +22,15 @@ const Card = ({ children, data }) => {
               <h3>
                 {item.value}{" "}
                 {item.icon === "FaArrowUp" ? (
-                  <FaArrowUp style={{ color: "green" }} />
+                  <FontAwesomeIcon
+                    icon={faSquareArrowUpRight}
+                    style={{ color: "#00c165" }}
+                  />
                 ) : (
-                  <FaArrowDown style={{ color: "red" }} />
+                  <FontAwesomeIcon
+                    icon={faSquareArrowUpRight}
+                    style={{ color: "#ff0000" }}
+                  />
                 )}
               </h3>
             </div>
