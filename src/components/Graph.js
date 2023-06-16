@@ -81,7 +81,7 @@ const Graph = () => {
   return (
     <div
       className="container"
-      style={{ overflowX: "auto", marginLeft: "200px" }}
+      style={{ overflowX: "auto", marginLeft: "180px" }}
     >
       <div className="graphs">
         <Card className="card-grow" data={data.card1}>
