@@ -2,16 +2,24 @@ import React from "react";
 import "./Card.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
+import { faCompress } from "@fortawesome/free-solid-svg-icons";
 
 const Card = ({ children, data }) => {
   return (
     <div className="card">
       <div className="card-header">
         <h2>{data.title}</h2>
-        <select>
-          <option>Last 7 days</option>
-          {/* Add more dropdown options as needed */}
-        </select>
+        <div>
+          <select style={{ marginRight: "5px" }}>
+            <option>Last 7 days</option>
+            {/* Add more dropdown options as needed */}
+          </select>
+          <FontAwesomeIcon
+            icon={faCompress}
+            size="xs"
+            style={{ color: "#696969" }}
+          />
+        </div>
       </div>
       <hr></hr>
       <div className="card-content">
