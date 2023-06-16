@@ -1,6 +1,6 @@
 import React from "react";
 import MUIDataTable from "mui-datatables";
-import "./CampaignTable.css";
+import "./CampaignTable.scss";
 import { Icon, IconButton, Switch } from "@mui/material";
 import {
   CheckCircle,

@@ -1,5 +1,5 @@
 import CampaignTable from "./CampaignTable";
-import "./Dashboard.css";
+import "./Dashboard.scss";
 import Graph from "./Graph";
 
 const Dashboard = () => {

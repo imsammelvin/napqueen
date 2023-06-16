@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import "./Graph.css";
+import "./Graph.scss";
 import { LineBarGraph } from "./LineBarGraph";
 import { LineGraph } from "./LineGraph";
 
