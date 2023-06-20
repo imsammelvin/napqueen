@@ -338,12 +338,11 @@ const Sidebar = () => {
 - The state variable `isOpen` and the `setIsOpen` function are created using the `useState` hook to manage the open/close state of the sidebar.
 - The `toggleSidebar` function is defined to toggle the value of `isOpen` when the sidebar is clicked.
 - The `Drawer` component is used as the container for the sidebar. It is rendered with the following props:
+
   - `variant="permanent"`: Specifies that the sidebar should always remain visible.
   - `open={isOpen}`: Determines whether the sidebar is open or closed based on the `isOpen` state variable.
   - `sx`: Allows for custom styling of the sidebar using the `theme.transitions` object for transitions.
-  - `anchor="left"`: Positions the sidebar on
-
-the left side of the screen.
+  - `anchor="left"`: Positions the sidebar on the left side of the screen.
 
 - The `Toolbar` component is used to display the toggle buttons for opening and closing the sidebar.
 - Two `IconButton` components are rendered within the `Toolbar`:

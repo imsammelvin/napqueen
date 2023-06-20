@@ -97,8 +97,8 @@ export const LineGraph = () => {
   React.useEffect(() => {
     // Register a custom scale for the right y-axis
     Chart.register({
-      id: "y1",
-      afterDraw: (chart, args, options) => {
+      id: "y",
+      afterDraw: (chart) => {
         const scales = chart.scales;
         const ctx = chart.ctx;
         const yAxis = scales.y1;

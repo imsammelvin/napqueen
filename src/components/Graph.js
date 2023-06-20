@@ -58,7 +58,6 @@ const Graph = () => {
         },
       ],
     },
-
     card3: {
       title: "Conversation Rate and Order",
       data: [

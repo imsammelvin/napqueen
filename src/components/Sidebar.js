@@ -3,6 +3,7 @@ import {
   Drawer,
   List,
   ListItem,
+  ListItemButton,
   ListItemIcon,
   ListItemText,
   IconButton,
@@ -65,12 +66,12 @@ const Sidebar = () => {
         </IconButton>
       </Toolbar>
       <List>
-        <ListItem button>
+        <ListItemButton>
           <ListItemIcon style={{ marginRight: "-20px" }}>
             <DashboardIcon />
           </ListItemIcon>
           {isOpen && <ListItemText primary="Dashboard" />}
-        </ListItem>
+        </ListItemButton>
         <ListItem button>
           <ListItemIcon style={{ marginRight: "-20px" }}>
             <BarChartIcon />

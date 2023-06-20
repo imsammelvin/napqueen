@@ -28,7 +28,7 @@ const Card = ({ children, data }) => {
             <div className="data-section" key={index}>
               <p>{item.title}</p>
               <h3>
-                {item.value}{" "}
+                {item.value}
                 {item.icon === "FaArrowUp" ? (
                   <FontAwesomeIcon
                     icon={faSquareArrowUpRight}

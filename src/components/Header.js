@@ -64,8 +64,13 @@ const Header = () => {
                   padding: "8px",
                   fontWeight: "bold",
                 }}
+                onChange={(e) => console.log(e.target.value)}
               >
-                <option value="All">All</option>
+                <option value="All" defaultValue>
+                  All
+                </option>
+                <option value="None">None</option>
+                <option value="Some">Some</option>
               </select>
             </div>
           </div>
