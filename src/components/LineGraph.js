@@ -1,6 +1,5 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
-import Chart from "chart.js/auto";
 
 export const options = {
   responsive: true,
@@ -94,29 +93,6 @@ const lineData = {
 };
 
 export const LineGraph = () => {
-  React.useEffect(() => {
-    // Register a custom scale for the right y-axis
-    Chart.register({
-      id: "y",
-      afterDraw: (chart) => {
-        const scales = chart.scales;
-        const ctx = chart.ctx;
-        const yAxis = scales.y1;
-        const yAxisWidth = yAxis.width;
-
-        ctx.save();
-        ctx.lineWidth = 1;
-        ctx.strokeStyle = yAxis.options.color;
-        ctx.beginPath();
-        const y = yAxis.getPixelForValue(yAxis.min);
-        ctx.moveTo(yAxisWidth, y);
-        ctx.lineTo(chart.width, y);
-        ctx.stroke();
-        ctx.restore();
-      },
-    });
-  }, []);
-
   return (
     <div>
       <Line options={options} data={lineData} height={210} width={420} />
